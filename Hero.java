@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+<<<<<<< HEAD
 /**
  * Write a description of class Hero here.
  * 
@@ -25,5 +26,22 @@ public class Hero extends Actor
         {
             setLocation(100, 300);
         }
+=======
+public class Hero extends Actor
+{
+    boolean atTop = true;
+    public void act()
+    {
+        if(Greenfoot.mouseClicked(null)){
+            atTop = !atTop;
+        }
+        
+        if(atTop) {
+            setLocation(100,100);
+        } else {
+            setLocation(300, 100);
+        }
+        
+>>>>>>> 5eafca01cf525457a3929520aa43d00a55af790a
     }
 }
